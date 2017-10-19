@@ -1,4 +1,4 @@
-FROM node:5.11.1-wheezy
+FROM node:6.11.1-wheezy
 
 RUN apt-get purge -y python.*
 
