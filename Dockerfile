@@ -1,7 +1,7 @@
 FROM node:12-alpine
 
 RUN apk update
-RUN apk add patch
+RUN apk add --no-cache patch git
 
 WORKDIR /data
 
