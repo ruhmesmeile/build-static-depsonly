@@ -6,4 +6,4 @@ RUN apk add --no-cache patch git
 WORKDIR /data
 
 ONBUILD COPY . . 
-ONBUILD RUN rm -rf /data/node_modules && npm install --global lerna && npm install --global gulp-cli && npm ci --unsafe-perm && npm run bootstrap
+ONBUILD RUN rm -rf /data/node_modules && npm install --global lerna && npm install --global gulp-cli && npm ci --unsafe-perm && lerna bootstrap
